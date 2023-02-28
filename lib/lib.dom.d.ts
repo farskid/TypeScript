@@ -5305,7 +5305,7 @@ interface EventTarget {
      * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
      */
     addEventListener(type: string, callback: EventListenerOrEventListenerObject | null, options?: AddEventListenerOptions | boolean): void;
-    /** Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
+    /** Dispatches a synthetic event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
     dispatchEvent(event: Event): boolean;
     /** Removes the event listener in target's event listener list with the same type, callback, and options. */
     removeEventListener(type: string, callback: EventListenerOrEventListenerObject | null, options?: EventListenerOptions | boolean): void;
@@ -17965,7 +17965,7 @@ declare function scrollTo(x: number, y: number): void;
 /** Cancels the document load. */
 declare function stop(): void;
 declare function toString(): string;
-/** Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
+/** Dispatches a synthetic event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
 declare function dispatchEvent(event: Event): boolean;
 declare function cancelAnimationFrame(handle: number): void;
 declare function requestAnimationFrame(callback: FrameRequestCallback): number;
